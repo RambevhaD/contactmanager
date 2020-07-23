@@ -22,7 +22,13 @@ class Addcontact extends Component{
       email,
       phone
       }
-      dispatch({type: 'ADD_CONTACT',payload:newContact})
+      dispatch({type: 'ADD_CONTACT',payload:newContact});
+      this.setState({
+        name:'',
+        email:'',
+        phone:''
+      });
+
   }
   render(){
     const {name,email,phone} = this.state;
