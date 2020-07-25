@@ -1,5 +1,6 @@
 import React,{ Component } from 'react'
 import {Consumer} from '../../Context';
+import textInputgroup from '../layout/textInputgroup'
 import uuid from 'uuid';
 
 
@@ -43,36 +44,28 @@ class Addcontact extends Component{
       <div className="card-body">
       <form onSubmit={this.onSubmit.bind(this,dispatch)}>
 
-      <div className="form-group">
-      <label htmlFor='name'>Name</label>
-      <input type="text" name="name"
-      className="form-control form-control-lg"
-      placeholder="enter a name"
+      <textInputgroup 
+      label='Name' 
+      name="name"
+      placeholder="Enter name"
       value={name}
-      onChange={this.onChange}
+      onChange={this.onChange} 
       />
-      </div>
-
-       <div className="form-group">
-      <label htmlFor='email'>Email</label>
-      <input type="email" name="email"
-      className="form-control form-control-lg"
-      placeholder="enter email"
-      value={email}
-      onChange={this.onChange}
+      <textInputgroup 
+      label='Email' 
+      name="email"
+      type="email"
+      placeholder="Enter email"
+      value={name}
+      onChange={this.onChange} 
       />
-      </div>
-
-       <div className="form-group">
-      <label htmlFor='name'>Phone</label>
-      <input type="text" name="phone"
-      className="form-control form-control-lg"
-      placeholder="enter a phone"
+      <textInputgroup 
+      label='Phone' 
+      name="Phone"
+      placeholder="Enter phone"
       value={phone}
-      onChange={this.onChange}
+      onChange={this.onChange} 
       />
-      </div>
-
       <input type="submit" value="Addcontact" className="btn btn-dark btn-block"/>
       </form>
       </div>
