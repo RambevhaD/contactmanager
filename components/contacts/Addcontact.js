@@ -1,11 +1,11 @@
 import React,{ Component } from 'react'
 import {Consumer} from '../../Context';
-import textInputgroup from '../layout/textInputgroup'
+import TextInputGroup from '../layouts/TextInputGroup'
 import uuid from 'uuid';
 
 
 
-class Addcontact extends Component{
+class Addcontacts extends Component{
   state ={
     name:'',
     email:'',
@@ -44,14 +44,14 @@ class Addcontact extends Component{
       <div className="card-body">
       <form onSubmit={this.onSubmit.bind(this,dispatch)}>
 
-      <textInputgroup 
+      <TextInputGroup 
       label='Name' 
       name="name"
       placeholder="Enter name"
       value={name}
       onChange={this.onChange} 
       />
-      <textInputgroup 
+      <TextInputGroup 
       label='Email' 
       name="email"
       type="email"
@@ -59,7 +59,7 @@ class Addcontact extends Component{
       value={name}
       onChange={this.onChange} 
       />
-      <textInputgroup 
+      <TextInputGroup 
       label='Phone' 
       name="Phone"
       placeholder="Enter phone"
@@ -78,4 +78,4 @@ class Addcontact extends Component{
   }
 }
 
-export default Addcontact
+export default Addcontacts;

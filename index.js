@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Contacts from './components/contacts/Contacts';
 import Header from './components/layouts/Header';
-import Addcontacts from './components/contacts/Addcontact'
+import Addcontact from './components/contacts/Addcontact'
 import {Provider} from './Context';
 
 
@@ -16,7 +16,7 @@ class App extends Component {
       <Provider>
       <div>
        <Header brand="Contactmanager"/>
-       <Addcontacts />
+       <Addcontact />
        <Contacts/>
       </div>
       </Provider>
