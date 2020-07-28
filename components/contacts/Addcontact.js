@@ -29,8 +29,8 @@ class Addcontacts extends Component{
         email:'',
         phone:''
       });
-
-  }
+      }
+      
   render(){
     const {name,email,phone} = this.state;
     return(
@@ -61,8 +61,7 @@ class Addcontacts extends Component{
       />
       <TextInputGroup 
       label='Phone'
-      type="text" 
-      name="Phone"
+      name="phone"
       placeholder="Enter phone"
       value={phone}
       onChange={this.onChange} 

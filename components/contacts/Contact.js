@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Consumer} from '../../Context'
 class Contact extends Component{
    state = {
-     showContactInfo:true
+     showContactInfo:false
    }; //!this.state.showContactInfo returns the opposite of whaterver our state is, if it's true it will return false.
   onDeleteClick = (id,dispatch)=>{
     dispatch({type:'DELETE_CONTACT',payload:id});
