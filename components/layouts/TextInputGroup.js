@@ -12,11 +12,12 @@ import PropTypes from 'prop-types';
   return(
     <div className="form-group">
       <label htmlFor={name}>{label}</label>
-      <input type={type}
+      <input 
+      type={type}
       name={name}
       className="form-control form-control-lg"
       placeholder={placeholder}
-      value={name}
+      value={value}
       onChange={onChange}
       />
     </div>

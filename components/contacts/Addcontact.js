@@ -47,7 +47,7 @@ class Addcontacts extends Component{
       <TextInputGroup 
       label='Name' 
       name="name"
-      placeholder="Enter name"
+      placeholder="Enter name..."
       value={name}
       onChange={this.onChange} 
       />
@@ -56,11 +56,12 @@ class Addcontacts extends Component{
       name="email"
       type="email"
       placeholder="Enter email"
-      value={name}
+      value={email}
       onChange={this.onChange} 
       />
       <TextInputGroup 
-      label='Phone' 
+      label='Phone'
+      type="text" 
       name="Phone"
       placeholder="Enter phone"
       value={phone}
